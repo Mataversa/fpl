@@ -2,18 +2,35 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <title>H4CK3R D0WN10AD</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Pobierz plik</title>
+    <style>
+      body {
+        background: #cccccc;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .download-btn {
+        background: #fff;
+        color: #333;
+        border: none;
+        padding: 18px 40px;
+        font-size: 1.2em;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px #bbb;
+        transition: background 0.2s, color 0.2s;
+      }
+      .download-btn:hover {
+        background: #f0f0f0;
+      }
+    </style>
   </head>
   <body>
-    <div class="scanlines"></div>
-    <div class="terminal">
-      <h1 class="glitch" data-text="H4CK3R D0WN10AD">D0WN10AD</h1>
-      <button id="downloadBtn" class="hacker-btn" style="display: block; margin: 40px auto 0 auto;">
-        <span>Pobierz plik</span>
-        <span class="btn-glow"></span>
-      </button>
-    </div>
-    <script src="script.js"></script>
+    <a href="plik.txt" download>
+      <button class="download-btn">Pobierz plik</button>
+    </a>
   </body>
 </html>
